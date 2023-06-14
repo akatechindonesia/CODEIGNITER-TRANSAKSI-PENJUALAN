@@ -1,0 +1,573 @@
+ERROR - 2023-06-13 09:15:48 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'transaksipenjualan' in C:\xampp\htdocs\transaksi-penjualan\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\transaksi-penjualan\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'transaksipenjua...', 3306, '', 0)
+#1 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\transaksi-penjualan\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\transaksi-penjualan\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\transaksi-penjualan\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\transaksi-penjualan\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\transaksi-penjualan\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\transaksi-penjualan\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'transaksipenjualan' in C:\xampp\htdocs\transaksi-penjualan\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\transaksi-penjualan\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\transaksi-penjualan\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\transaksi-penjualan\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\transaksi-penjualan\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\xampp\htdocs\transaksi-penjualan\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\xampp\htdocs\transaksi-penjualan\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-06-13 09:32:02 --> mysqli_sql_exception: Table 'users' already exists in C:\xampp\htdocs\transaksi-penjualan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\transaksi-penjualan\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp\htdocs\transaksi-penjualan\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp\htdocs\transaksi-penjualan\app\Database\Migrations\2023-06-13-093021_CreateUsersTable.php(39): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\xampp\htdocs\transaksi-penjualan\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateUsersTable->up()
+#6 C:\xampp\htdocs\transaksi-penjualan\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\transaksi-penjualan\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\transaksi-penjualan\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\transaksi-penjualan\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\transaksi-penjualan\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2023-06-13 10:19:28 --> Undefined array key "id_user"
+in APPPATH\Views\transaksi\index.php on line 16.
+ 1 APPPATH\Views\transaksi\index.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(15): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 10:19:50 --> Undefined array key "id_user"
+in APPPATH\Views\transaksi\index.php on line 16.
+ 1 APPPATH\Views\transaksi\index.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(15): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 10:20:39 --> Undefined array key "id_user"
+in APPPATH\Views\transaksi\index.php on line 16.
+ 1 APPPATH\Views\transaksi\index.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(15): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 10:20:41 --> Undefined array key "id_user"
+in APPPATH\Views\transaksi\index.php on line 16.
+ 1 APPPATH\Views\transaksi\index.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(15): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 10:48:01 --> Undefined array key "id_user"
+in APPPATH\Views\transaksi\index.php on line 16.
+ 1 APPPATH\Views\transaksi\index.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(15): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 10:48:01 --> Undefined array key "id_user"
+in APPPATH\Views\transaksi\index.php on line 16.
+ 1 APPPATH\Views\transaksi\index.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(15): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 10:51:38 --> Undefined array key "id_user"
+in APPPATH\Views\transaksi\index.php on line 16.
+ 1 APPPATH\Views\transaksi\index.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(15): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 10:51:39 --> Undefined array key "id_user"
+in APPPATH\Views\transaksi\index.php on line 16.
+ 1 APPPATH\Views\transaksi\index.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(15): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 10:51:40 --> Undefined array key "id_user"
+in APPPATH\Views\transaksi\index.php on line 16.
+ 1 APPPATH\Views\transaksi\index.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(15): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 10:52:42 --> Undefined array key "id_user"
+in APPPATH\Views\transaksi\index.php on line 16.
+ 1 APPPATH\Views\transaksi\index.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(14): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 10:54:14 --> Undefined array key "id_user"
+in APPPATH\Views\transaksi\index.php on line 34.
+ 1 APPPATH\Views\transaksi\index.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(14): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 10:57:05 --> Undefined array key "id_user"
+in APPPATH\Views\transaksi\index.php on line 30.
+ 1 APPPATH\Views\transaksi\index.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(14): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 10:57:09 --> Undefined array key "id_user"
+in APPPATH\Views\transaksi\index.php on line 30.
+ 1 APPPATH\Views\transaksi\index.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(14): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 11:02:47 --> Undefined array key "id_user"
+in APPPATH\Views\transaksi\index.php on line 30.
+ 1 APPPATH\Views\transaksi\index.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(14): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 11:04:45 --> Undefined array key "id_user"
+in APPPATH\Views\transaksi\index.php on line 30.
+ 1 APPPATH\Views\transaksi\index.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(14): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 11:07:50 --> Undefined array key "id_user"
+in APPPATH\Views\transaksi\index.php on line 30.
+ 1 APPPATH\Views\transaksi\index.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(15): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 11:09:41 --> syntax error, unexpected token ";"
+in APPPATH\Views\transaksi\index.php on line 30.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 3 APPPATH\Controllers\TransaksiController.php(15): view('transaksi/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 11:09:43 --> syntax error, unexpected token ";"
+in APPPATH\Views\transaksi\index.php on line 30.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 3 APPPATH\Controllers\TransaksiController.php(15): view('transaksi/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 11:10:04 --> Undefined array key "id_barang"
+in APPPATH\Views\transaksi\index.php on line 31.
+ 1 APPPATH\Views\transaksi\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_barang"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(15): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 11:15:42 --> Undefined array key "id_barang"
+in APPPATH\Views\transaksi\index.php on line 31.
+ 1 APPPATH\Views\transaksi\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_barang"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(20): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 11:30:27 --> mysqli_sql_exception: Unknown column 'users.nama' in 'field list' in C:\xampp\htdocs\transaksi-penjualan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\transaksi-penjualan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `transak...', 0)
+#1 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transak...')
+#2 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transak...')
+#3 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `transak...', Array, false)
+#4 C:\xampp\htdocs\transaksi-penjualan\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\transaksi-penjualan\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\transaksi-penjualan\app\Models\TransaksiModel.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\transaksi-penjualan\app\Controllers\TransaksiController.php(22): App\Models\TransaksiModel->getAllTransaksi()
+#8 C:\xampp\htdocs\transaksi-penjualan\system\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+#9 C:\xampp\htdocs\transaksi-penjualan\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+#10 C:\xampp\htdocs\transaksi-penjualan\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\transaksi-penjualan\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-13 11:30:27 --> Unknown column 'users.nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `transaksi`.*, `users`.`nama` as `nama_user`, `supplier`.`nama` as `nama_supplier`
+FROM `transaksi`
+JOIN `users` ON `users`.`id` = `transaksi`.`user_id`
+JOIN `supplier` ON `supplier`.`id` = `transaksi`.`supplier_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi`.*, `users`.`nama` as `nama_user`, `supplier`.`nama` as `nama_supplier`
+FROM `transaksi`
+JOIN `users` ON `users`.`id` = `transaksi`.`user_id`
+JOIN `supplier` ON `supplier`.`id` = `transaksi`.`supplier_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi`.*, `users`.`nama` as `nama_user`, `supplier`.`nama` as `nama_supplier`
+FROM `transaksi`
+JOIN `users` ON `users`.`id` = `transaksi`.`user_id`
+JOIN `supplier` ON `supplier`.`id` = `transaksi`.`supplier_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.*, `users`.`nama` as `nama_user`, `supplier`.`nama` as `nama_supplier`
+FROM `transaksi`
+JOIN `users` ON `users`.`id` = `transaksi`.`user_id`
+JOIN `supplier` ON `supplier`.`id` = `transaksi`.`supplier_id`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\TransaksiModel.php(20): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\TransaksiController.php(22): App\Models\TransaksiModel->getAllTransaksi()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 11:31:49 --> mysqli_sql_exception: Unknown column 'supplier.nama' in 'field list' in C:\xampp\htdocs\transaksi-penjualan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\transaksi-penjualan\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `transak...', 0)
+#1 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transak...')
+#2 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transak...')
+#3 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `transak...', Array, false)
+#4 C:\xampp\htdocs\transaksi-penjualan\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\transaksi-penjualan\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\transaksi-penjualan\app\Models\TransaksiModel.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\transaksi-penjualan\app\Controllers\TransaksiController.php(22): App\Models\TransaksiModel->getAllTransaksi()
+#8 C:\xampp\htdocs\transaksi-penjualan\system\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+#9 C:\xampp\htdocs\transaksi-penjualan\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+#10 C:\xampp\htdocs\transaksi-penjualan\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\transaksi-penjualan\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-13 11:31:49 --> Unknown column 'supplier.nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `transaksi`.*, `users`.`username` as `nama_user`, `supplier`.`nama` as `nama_supplier`
+FROM `transaksi`
+JOIN `users` ON `users`.`id` = `transaksi`.`user_id`
+JOIN `supplier` ON `supplier`.`id` = `transaksi`.`supplier_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi`.*, `users`.`username` as `nama_user`, `supplier`.`nama` as `nama_supplier`
+FROM `transaksi`
+JOIN `users` ON `users`.`id` = `transaksi`.`user_id`
+JOIN `supplier` ON `supplier`.`id` = `transaksi`.`supplier_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi`.*, `users`.`username` as `nama_user`, `supplier`.`nama` as `nama_supplier`
+FROM `transaksi`
+JOIN `users` ON `users`.`id` = `transaksi`.`user_id`
+JOIN `supplier` ON `supplier`.`id` = `transaksi`.`supplier_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.*, `users`.`username` as `nama_user`, `supplier`.`nama` as `nama_supplier`
+FROM `transaksi`
+JOIN `users` ON `users`.`id` = `transaksi`.`user_id`
+JOIN `supplier` ON `supplier`.`id` = `transaksi`.`supplier_id`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\TransaksiModel.php(20): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\TransaksiController.php(22): App\Models\TransaksiModel->getAllTransaksi()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 11:48:36 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`transaksipenjualan`.`transaksi`, CONSTRAINT `transaksi_supplier_id_foreign` FOREIGN KEY (`supplier_id`) REFERENCES `supplier` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\transaksi-penjualan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\transaksi-penjualan\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\transaksi-penjualan\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\transaksi-penjualan\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\transaksi-penjualan\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\transaksi-penjualan\app\Controllers\TransaksiController.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\transaksi-penjualan\system\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+#9 C:\xampp\htdocs\transaksi-penjualan\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+#10 C:\xampp\htdocs\transaksi-penjualan\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\transaksi-penjualan\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-13 11:48:37 --> Cannot add or update a child row: a foreign key constraint fails (`transaksipenjualan`.`transaksi`, CONSTRAINT `transaksi_supplier_id_foreign` FOREIGN KEY (`supplier_id`) REFERENCES `supplier` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `transaksi` (`user_id`, `barang_id`, `supplier_id`, `quantity`, `harga`, `created_at`, `updated_at`) VALUES (\'2\', \'1\', \'2\', \'5\', \'70000\', \'2023-06-13 11:48:36\', \'2023-06-13 11:48:36\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksi` (`user_id`, `barang_id`, `supplier_id`, `quantity`, `harga`, `created_at`, `updated_at`) VALUES (\'2\', \'1\', \'2\', \'5\', \'70000\', \'2023-06-13 11:48:36\', \'2023-06-13 11:48:36\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksi` (`user_id`, `barang_id`, `supplier_id`, `quantity`, `harga`, `created_at`, `updated_at`) VALUES (\'2\', \'1\', \'2\', \'5\', \'70000\', \'2023-06-13 11:48:36\', \'2023-06-13 11:48:36\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`user_id`, `barang_id`, `supplier_id`, `quantity`, `harga`, `created_at`, `updated_at`) VALUES (:user_id:, :barang_id:, :supplier_id:, :quantity:, :harga:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\TransaksiController.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 11:54:56 --> Undefined variable $users
+in APPPATH\Views\transaksi\create.php on line 30.
+ 1 APPPATH\Views\transaksi\create.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\create.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/create', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(39): view('transaksi/create')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 12:43:02 --> Undefined variable $transaksi
+in APPPATH\Views\transaksi\report.php on line 24.
+ 1 APPPATH\Views\transaksi\report.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaksi', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\report.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/report', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(92): view('transaksi/report')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->report()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 12:49:11 --> Call to undefined method App\Models\TransaksiModel::getTransaksiByPeriod
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\TransaksiController.php(101): CodeIgniter\Model->__call('getTransaksiByPeriod', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->generateReport()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 12:54:21 --> Undefined array key "tanggal_transaksi"
+in APPPATH\Views\transaksi\report.php on line 47.
+ 1 APPPATH\Views\transaksi\report.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_transaksi"', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\report.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/report', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(108): view('transaksi/report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->generateReport()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 13:08:19 --> Undefined variable $title
+in APPPATH\Views\templates\header.php on line 7.
+ 1 APPPATH\Views\templates\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\templates\\header.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\templates\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('templates/header', null, true)
+ 5 APPPATH\Views\barang\index.php(1): CodeIgniter\View\View->include('templates/header')
+ 6 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\barang\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/index', [], true)
+ 9 APPPATH\Controllers\BarangController.php(15): view('barang/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 13:25:42 --> Undefined variable $startDate
+in APPPATH\Views\transaksi\report.php on line 24.
+ 1 APPPATH\Views\transaksi\report.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $startDate', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\report.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/report', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(92): view('transaksi/report')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->report()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 13:27:47 --> Undefined variable $thitle
+in APPPATH\Views\barang\index.php on line 3.
+ 1 APPPATH\Views\barang\index.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $thitle', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\barang\\index.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\barang\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/index', [], true)
+ 5 APPPATH\Controllers\BarangController.php(16): view('barang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 14:45:52 --> Undefined variable $title
+in APPPATH\Views\barang\create.php on line 1.
+ 1 APPPATH\Views\barang\create.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\barang\\create.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\barang\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/create', [], true)
+ 5 APPPATH\Controllers\BarangController.php(23): view('barang/create')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 14:45:54 --> Invalid file: "header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('header', [], true)
+ 3 APPPATH\Controllers\BarangController.php(16): view('header', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 14:45:57 --> Invalid file: "header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('header', [], true)
+ 3 APPPATH\Controllers\BarangController.php(16): view('header', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 14:46:17 --> Undefined variable $title
+in APPPATH\Views\barang\create.php on line 1.
+ 1 APPPATH\Views\barang\create.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\barang\\create.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\barang\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/create', [], true)
+ 5 APPPATH\Controllers\BarangController.php(23): view('barang/create')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 15:14:12 --> Undefined variable $startDate
+in APPPATH\Views\transaksi\report.php on line 24.
+ 1 APPPATH\Views\transaksi\report.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $startDate', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\report.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/report', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(104): view('transaksi/report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->report()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 15:18:43 --> Undefined variable $users
+in APPPATH\Views\transaksi\edit.php on line 7.
+ 1 APPPATH\Views\transaksi\edit.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\edit.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/edit', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(71): view('transaksi/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->edit('5', '5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 15:19:29 --> Undefined variable $users
+in APPPATH\Views\transaksi\edit.php on line 7.
+ 1 APPPATH\Views\transaksi\edit.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\edit.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/edit', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(71): view('transaksi/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->edit('5', '5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 15:21:11 --> Undefined variable $startDate
+in APPPATH\Views\transaksi\report.php on line 24.
+ 1 APPPATH\Views\transaksi\report.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $startDate', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\report.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/report', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(113): view('transaksi/report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->report()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 16:04:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`transaksipenjualan`.`transaksi`, CONSTRAINT `transaksi_barang_id_foreign` FOREIGN KEY (`barang_id`) REFERENCES `barang` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\transaksi-penjualan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\transaksi-penjualan\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', NULL, false)
+#4 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\transaksi-penjualan\app\Database\Seeds\TransaksiSeeder.php(32): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\transaksi-penjualan\system\Database\Seeder.php(146): App\Database\Seeds\TransaksiSeeder->run()
+#7 C:\xampp\htdocs\transaksi-penjualan\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\transaksi-penjualan\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\transaksi-penjualan\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\transaksi-penjualan\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-06-13 16:12:24 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`transaksipenjualan`.`transaksi`, CONSTRAINT `transaksi_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\transaksi-penjualan\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\transaksi-penjualan\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\transaksi-penjualan\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\transaksi-penjualan\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\transaksi-penjualan\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\transaksi-penjualan\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\transaksi-penjualan\app\Controllers\TransaksiController.php(60): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\transaksi-penjualan\system\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+#9 C:\xampp\htdocs\transaksi-penjualan\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+#10 C:\xampp\htdocs\transaksi-penjualan\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\transaksi-penjualan\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-13 16:12:24 --> Cannot add or update a child row: a foreign key constraint fails (`transaksipenjualan`.`transaksi`, CONSTRAINT `transaksi_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `transaksi` (`user_id`, `barang_id`, `supplier_id`, `quantity`, `harga`, `created_at`, `updated_at`) VALUES (\'\', \'\', \'\', \'\', \'\', \'2023-06-13 16:12:24\', \'2023-06-13 16:12:24\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksi` (`user_id`, `barang_id`, `supplier_id`, `quantity`, `harga`, `created_at`, `updated_at`) VALUES (\'\', \'\', \'\', \'\', \'\', \'2023-06-13 16:12:24\', \'2023-06-13 16:12:24\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksi` (`user_id`, `barang_id`, `supplier_id`, `quantity`, `harga`, `created_at`, `updated_at`) VALUES (\'\', \'\', \'\', \'\', \'\', \'2023-06-13 16:12:24\', \'2023-06-13 16:12:24\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`user_id`, `barang_id`, `supplier_id`, `quantity`, `harga`, `created_at`, `updated_at`) VALUES (:user_id:, :barang_id:, :supplier_id:, :quantity:, :harga:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\TransaksiController.php(60): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
