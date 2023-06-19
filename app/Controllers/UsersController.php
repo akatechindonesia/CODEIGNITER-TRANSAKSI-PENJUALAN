@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Models\UserModel;
 use CodeIgniter\Controller;
 
-class UsersController extends Controller
+class UsersController extends BaseController
 {
     public function index()
     {
@@ -30,15 +30,31 @@ class UsersController extends Controller
     public function store()
     {
         $userModel = new UserModel();
-        $data = [
-            'username' => $this->request->getPost('username'),
-            'email' => $this->request->getPost('email'),
-            'password' => $this->request->getPost('password'),
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s'),
+
+        $rules = [
+            'username' => 'required|min_length[3]',
+            'email' => 'required|valid_email',
+            'password' => 'required|min_length[3]',
         ];
-        $userModel->insert($data);
-        return redirect()->to('/users');
+
+        if ($this->validate($rules)) {
+            $data = [
+                'username' => $this->request->getPost('username', FILTER_SANITIZE_STRING),
+                'email' => $this->request->getPost('email', FILTER_SANITIZE_STRING),
+                'password' => $this->request->getPost('password', FILTER_SANITIZE_STRING),
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ];
+            $userModel->insert($data);
+            return redirect()->to('/users');
+        } else {
+            $data['validation'] = $this->validator;
+            $data['title'] = 'Halaman Create Users';
+
+            echo view('templates/header', $data); // Menampilkan header
+            echo view('users/create', $data); // Menampilkan konten halaman
+            echo view('templates/footer');
+        }
     }
 
     public function edit($id)

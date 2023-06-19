@@ -1,0 +1,369 @@
+CRITICAL - 2023-06-19 14:33:21 --> Invalid file: "/barang.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/barang.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang', [], true)
+ 3 APPPATH\Controllers\BarangController.php(46): view('/barang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 14:33:34 --> Invalid file: "/barang.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/barang.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang', [], true)
+ 3 APPPATH\Controllers\BarangController.php(46): view('/barang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 14:36:13 --> Invalid file: "/barang.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/barang.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/barang', [], true)
+ 3 APPPATH\Controllers\BarangController.php(46): view('/barang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 14:40:58 --> Invalid file: "barang.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang', [], true)
+ 3 APPPATH\Controllers\BarangController.php(46): view('barang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 14:41:47 --> Invalid file: "barang.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang', [], true)
+ 3 APPPATH\Controllers\BarangController.php(46): view('barang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 14:46:03 --> Undefined variable $title
+in APPPATH\Views\barang\create.php on line 1.
+ 1 APPPATH\Views\barang\create.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\barang\\create.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\barang\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('barang/create', [], true)
+ 5 APPPATH\Controllers\BarangController.php(47): view('barang/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 14:52:21 --> "sanitize" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 329.
+ 1 SYSTEMPATH\Validation\Validation.php(329): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('sanitize')
+ 2 SYSTEMPATH\Validation\Validation.php(179): CodeIgniter\Validation\Validation->processRules('nama_barang', 'nama_barang', 'kertas a4v', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\BarangController.php(37): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 14:54:18 --> "sanitize" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 329.
+ 1 SYSTEMPATH\Validation\Validation.php(329): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('sanitize')
+ 2 SYSTEMPATH\Validation\Validation.php(179): CodeIgniter\Validation\Validation->processRules('nama_barang', 'nama_barang', 'kertas a4b', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\BarangController.php(38): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 14:54:23 --> "sanitize" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 329.
+ 1 SYSTEMPATH\Validation\Validation.php(329): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('sanitize')
+ 2 SYSTEMPATH\Validation\Validation.php(179): CodeIgniter\Validation\Validation->processRules('nama_barang', 'nama_barang', 'kertas a4b', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\BarangController.php(38): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 14:54:32 --> "sanitize" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 329.
+ 1 SYSTEMPATH\Validation\Validation.php(329): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('sanitize')
+ 2 SYSTEMPATH\Validation\Validation.php(179): CodeIgniter\Validation\Validation->processRules('nama_barang', 'nama_barang', 'kertas a4', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\BarangController.php(38): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 14:55:24 --> Undefined property: App\Controllers\BarangController::$security
+in APPPATH\Controllers\BarangController.php on line 40.
+ 1 APPPATH\Controllers\BarangController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\BarangController::$security', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Controllers\\BarangController.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 14:56:33 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\BarangController.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 14:57:02 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\BarangController.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 14:57:38 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\BarangController.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BarangController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 15:08:30 --> Undefined variable $validation
+in APPPATH\Views\users\create.php on line 9.
+ 1 APPPATH\Views\users\create.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\users\\create.php', 9)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\users\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('users/create', [], true)
+ 5 APPPATH\Controllers\UsersController.php(26): view('users/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsersController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 15:13:15 --> "xss_clean" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 329.
+ 1 SYSTEMPATH\Validation\Validation.php(329): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('xss_clean')
+ 2 SYSTEMPATH\Validation\Validation.php(179): CodeIgniter\Validation\Validation->processRules('email', 'email', 'firdausekon@gmail.com', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\UsersController.php(42): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsersController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 15:15:25 --> "xss_clean" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 329.
+ 1 SYSTEMPATH\Validation\Validation.php(329): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('xss_clean')
+ 2 SYSTEMPATH\Validation\Validation.php(179): CodeIgniter\Validation\Validation->processRules('email', 'email', 'firdausekon@gmail.com', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\UsersController.php(42): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsersController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:19:08 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\UsersController.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsersController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:19:08 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\UsersController.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsersController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:19:08 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\UsersController.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsersController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:19:46 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\UsersController.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsersController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:19:46 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\UsersController.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsersController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:19:46 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\UsersController.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsersController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:20:51 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\UsersController.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsersController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:20:51 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\UsersController.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsersController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:20:51 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\UsersController.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsersController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:27:21 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\SupplierController.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SupplierController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SupplierController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:27:21 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\SupplierController.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SupplierController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SupplierController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:28:48 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\SupplierController.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SupplierController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SupplierController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:28:48 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\SupplierController.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SupplierController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SupplierController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 15:38:57 --> Undefined variable $users
+in APPPATH\Views\transaksi\create.php on line 10.
+ 1 APPPATH\Views\transaksi\create.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\create.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/create', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(77): view('transaksi/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 15:39:21 --> Undefined variable $users
+in APPPATH\Views\transaksi\create.php on line 10.
+ 1 APPPATH\Views\transaksi\create.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\create.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/create', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(77): view('transaksi/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:40:48 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\TransaksiController.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:40:48 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\TransaksiController.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:40:48 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\TransaksiController.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:40:48 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\TransaksiController.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:40:48 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\TransaksiController.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 15:41:10 --> Undefined variable $users
+in APPPATH\Views\transaksi\create.php on line 10.
+ 1 APPPATH\Views\transaksi\create.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\create.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/create', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(77): view('transaksi/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 15:45:02 --> Undefined variable $users
+in APPPATH\Views\transaksi\create.php on line 10.
+ 1 APPPATH\Views\transaksi\create.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\create.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/create', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(77): view('transaksi/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 15:45:42 --> Undefined variable $users
+in APPPATH\Views\transaksi\create.php on line 10.
+ 1 APPPATH\Views\transaksi\create.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\create.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/create', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(77): view('transaksi/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:46:36 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\TransaksiController.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:46:36 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\TransaksiController.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:46:36 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\TransaksiController.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:46:36 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\TransaksiController.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:46:36 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\TransaksiController.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 15:46:57 --> Undefined variable $users
+in APPPATH\Views\transaksi\create.php on line 10.
+ 1 APPPATH\Views\transaksi\create.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\create.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Views\\transaksi\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/create', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(77): view('transaksi/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 15:52:03 --> Undefined variable $userModel
+in APPPATH\Controllers\TransaksiController.php on line 75.
+ 1 APPPATH\Controllers\TransaksiController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userModel', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Controllers\\TransaksiController.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 15:52:19 --> Undefined variable $userModel
+in APPPATH\Controllers\TransaksiController.php on line 75.
+ 1 APPPATH\Controllers\TransaksiController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userModel', 'C:\\xampp\\htdocs\\transaksi-penjualan\\app\\Controllers\\TransaksiController.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:54:40 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\TransaksiController.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:54:40 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\TransaksiController.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:54:40 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\TransaksiController.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:54:40 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\TransaksiController.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-19 15:54:40 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\TransaksiController.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

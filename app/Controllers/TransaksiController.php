@@ -40,26 +40,51 @@ class TransaksiController extends BaseController
         $data['suppliers'] = $supplierModel->findAll();
         $data['title'] = 'Halaman Create Transaksi';
 
-        echo view('templates/header', $data); // Menampilkan header
-        echo view('transaksi/create', $data); // Menampilkan konten halaman
+        echo view('templates/header', $data);
+        echo view('transaksi/create', $data);
         echo view('templates/footer');
     }
 
     public function store()
     {
-        $data = [
-            'user_id' => $this->request->getPost('user_id'),
-            'barang_id' => $this->request->getPost('barang_id'),
-            'supplier_id' => $this->request->getPost('supplier_id'),
-            'quantity' => $this->request->getPost('quantity'),
-            'harga' => $this->request->getPost('harga'),
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s')
+
+        $rules = [
+            'user_id' => 'required|numeric',
+            'barang_id' => 'required|numeric',
+            'supplier_id' => 'required|numeric',
+            'quantity' => 'required|numeric',
+            'harga' => 'required|numeric|max_length[10]'
         ];
 
-        $this->transaksiModel->insert($data);
+        if ($this->validate($rules)) {
 
-        return redirect()->to('/transaksi');
+            $data = [
+                'user_id' => $this->request->getPost('user_id', FILTER_SANITIZE_STRING),
+                'barang_id' => $this->request->getPost('barang_id', FILTER_SANITIZE_STRING),
+                'supplier_id' => $this->request->getPost('supplier_id', FILTER_SANITIZE_STRING),
+                'quantity' => $this->request->getPost('quantity', FILTER_SANITIZE_STRING),
+                'harga' => $this->request->getPost('harga', FILTER_SANITIZE_STRING),
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
+            ];
+
+            $this->transaksiModel->insert($data);
+            return redirect()->to('/transaksi');
+        } else {
+            $userModel = new UserModel();
+            $barangModel = new BarangModel();
+            $supplierModel = new SupplierModel();
+
+            $data['validation'] = $this->validator;
+            $data['users'] = $userModel->findAll();
+            $data['barang'] = $barangModel->findAll();
+            $data['suppliers'] = $supplierModel->findAll();
+            $data['title'] = 'Halaman Create Transaksi';
+
+            echo view('templates/header', $data);
+            echo view('transaksi/create', $data);
+            echo view('templates/footer');
+        }
     }
 
     public function edit($id)

@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Models\BarangModel;
 use CodeIgniter\Controller;
 
-class BarangController extends Controller
+class BarangController extends BaseController
 {
     public function index()
     {
@@ -29,14 +29,27 @@ class BarangController extends Controller
     public function store()
     {
         $model = new BarangModel();
-        $data = [
-            'nama_barang' => $this->request->getPost('nama_barang'),
-            'harga' => $this->request->getPost('harga')
+        $rules = [
+            'nama_barang' => 'required|min_length[3]',
+            'harga' => 'required|numeric|max_length[10]'
         ];
-        $model->insert($data);
 
-        return redirect()->to('/barang');
+        if ($this->validate($rules)) {
+            $data = [
+                'nama_barang' => $this->request->getPost('nama_barang', FILTER_SANITIZE_STRING),
+                'harga' => $this->request->getPost('harga')
+            ];
+            $model->insert($data);
+            return redirect()->to('/barang');
+        } else {
+            $data['validation'] = $this->validator;
+            $data['title'] = 'Halaman Create Barang';
+            echo view('templates/header', $data); // Menampilkan header
+            echo view('barang/create', $data); // Menampilkan konten halaman
+            echo view('templates/footer');
+        }
     }
+
 
     public function edit($id)
     {
